@@ -1,0 +1,32 @@
+[
+    {
+        "initial": [["a", "x", "b"], "p", "c"],
+        "operations": [
+            ["right", "p"]
+        ],
+        "final": ["a", "x", ["b", "p", "c"]]
+    },
+    {
+        "initial": [["a", "x", "b"], "p", "c"],
+        "operations": [
+            ["right", "p"],
+            ["left", "x"]
+        ],
+        "final": [["a", "x", "b"], "p", "c"]
+    },
+    {
+        "initial": [["a", "x", "b"], "p", "c"],
+        "operations": [
+            ["left", "p"]
+        ],
+        "final": [[["a", "x", "b"], "p", null], "c", null]
+    },
+    {
+        "initial": [["a", "x", "b"], "p", "c"],
+        "operations": [
+            ["left", "p"],
+            ["right", "c"]
+        ],
+        "final": [["a", "x", "b"], "p", "c"]
+    }
+]
